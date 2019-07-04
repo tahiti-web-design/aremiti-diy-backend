@@ -16,10 +16,21 @@ public class PackageEntity {
 
     private String descriptif;
 
+    private Integer nb_adultes;
 
+    private Integer nb_jeunes;
 
+    private Integer nb_bebe;
 
+    private Integer nb_voiture;
 
+    private Integer nb_moto;
+
+    private Integer nb_velo;
+
+    private Integer categorie;
+
+    private Boolean actif;
 
 
 }
