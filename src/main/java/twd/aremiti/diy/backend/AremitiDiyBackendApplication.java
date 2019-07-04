@@ -23,17 +23,18 @@ public class AremitiDiyBackendApplication {
 				.select()
 				.apis(RequestHandlerSelectors.any())
 				.paths(PathSelectors.any())
-				.build();
+				.build()
+				.apiInfo(apiInfo());
 	}
 
 	private ApiInfo apiInfo() {
 		return new ApiInfo(
-				"My REST API",
-				"Some custom description of API.",
-				"API TOS",
-				"Terms of service",
-				new Contact("John Doe", "www.example.com", "myeaddress@company.com"),
-				"License of API", "API license URL", Collections.emptyList());
+				"API Aremiti DIY",
+				"API de gestion des packages et tickets speciaux",
+				"0.1",
+				"",
+				new Contact("TWD", "http://www.tahitiwebdesign.com", "contact@tahitiwebdesign.com"),
+				"", "", Collections.emptyList());
 	}
 
 	public static void main(String[] args) {
